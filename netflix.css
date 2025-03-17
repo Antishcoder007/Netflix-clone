@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mainNetflixContainer{
+    /* border: 2px solid red; */
+    /* padding: 1rem 2rem; */
+}
+.backgroundContainer{
+    background-image:url(./assets/banner.jpg);
+    filter: blur(16px);
+    height: 100vh;
+    position: relative;
+}
+
+.pinkOverlay{
+    background-color: rgba(162, 100, 111, 0.73);
+    /* background-color: rgb(146, 92, 101); */
+    height: 100%;
+    width: 100%;
+}
+
+.contentContainer{
+    position: absolute;
+    top: 0;
+    background-color: rgba(0,0,0,.5);
+    padding: 0.5rem 2.5rem;
+}
+
+nav{
+    /* border: 2px solid green; */
+    height: 23vh;
+}
+
+.upperNavbarSection{
+    /* border: 2px solid blue; */
+    display: flex;
+    height: 50%;
+    justify-content: space-between;
+}
+
+.upperNavbarleftSection{
+    /* border: 2px solid rgb(0, 255, 217); */
+    width: 50%;
+    
+}
+
+.netflixLogo{
+    width: 31%;
+    /* border: 2px solid red; */
+}
+
+.upperNavbarrightSection{
+    /* border: 2px solid rgb(255, 0, 132); */
+    width: 50%;
+    
+}
+
+.navBarButtonContainer{
+    /* border: 2px solid rgb(255, 0, 132); */
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+    
+}
+.languageButton{
+    display: flex;
+    padding: .5rem 1.6rem;
+    border-radius: 50px;
+    /* background: transparent; */
+    background: rgba(0,0,0,0.3);
+    border: 1px solid white;
+    color: white;
+    font-weight:600;
+    
+}
+
+.signInButton{
+    padding: .5rem 1.3rem;
+    border-radius: 50px;
+    background-color: #ffffff;
+    outline: none;
+    border: none;
+    margin: 0px 10px ;
+    font-weight:600;
+}
+
+.languageButton p{
+    margin-left: 10px;
+}
+
+.lowerNavbarSection{
+    /* border: 2px solid rgb(238, 255, 0); */
+    height: 50%;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.menuList{
+    width: 38%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    background: rgba(0,0,0,.7);
+    box-shadow: 7px 7px 10px rgba(0,0,0,0.5);
+    height: 70% ;
+
+}
+
+.menuList li{
+    /* border: 2px solid red; */
+    height: 100%;
+    display: flex;
+    align-items:center;
+}
+
+.bannerSection{
+    height: 90vh;
+    background-image:url(./assets/banner.jpg);
+    background-size: 100% 100%;
+    border-radius:20px;
+    position: relative;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-image:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.7),rgba(0, 0, 0, 0.904),rgba(0,0,0,.7));
+    border-radius:20px;
+    border:2px solid rgba(255, 255, 255, 0.088);
+}
+
+.bannerContainer{
+    /* border: 2px solid red; */
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    /* top: 0; */
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+}
+
+.bannerContainer h2{
+    font-size: 4rem;
+    width: 60%;
+    text-align: center;
+}
+.bannerContainer h4{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 20px;
+}
+.bannerContainer p{
+    font-size: 1rem;
+    text-align: center;
+    margin: 20px;
+}
+
+.inputContainer{
+    /* border:1px solid red; */
+    width: 50%;
+    height: 12%;
+    display: flex;
+    justify-content: space-between;
+}
+.emailInput{
+    padding: 1rem 2rem;
+    width: 60%;
+    /* height: 100%; */
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: rgba(79, 78, 78, 0.645);
+    font-size: 1rem;
+    /* font-weight: 600; */
+    color: #ffffff;
+}
+
+.emailInput::placeholder{
+    color: #838080;
+}
+.getStartedButton{
+    color: #ffffff;
+    padding: 1rem 2rem;
+    width: 39%;
+    /* height: 100%; */
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-color: red;
+    font-size: 1.2rem;
+    /* font-weight: 900; */
+}
