@@ -209,27 +209,50 @@ nav{
     /* font-weight: 900; */
 }
 
-.carouselSection{
+.carouselSection, .plainSection,.reasonToJoin,.faqSection{
     /* border: 5px solid red; */
     color: white;
-    width: 80%;
+    width: 100%;
+}
+.carouselSection h2,.plainSection h3,.faqSection h2{
+    /* border: 2px solid red; */
+    margin: 1rem 0 1rem 7rem;
+    font-size: 2rem;
+}
+.plainSection h2,.reasonToJoin h2{
+    margin: 1rem 0 1rem 6rem;
+    font-size: 1.7rem;
 }
 
-
-.carouselCardContainer{
-    /* border: 4px solid green; */
-    width: 90%;
+.carouselCardContainer, .plansContainer,.reasonContainer,.faqCardContainer{
+    /* border: 4px solid green;  */
+    width: 85%;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
     margin: 2rem auto;
 }
+.faqCardContainer{
+    flex-direction: column;
+}
 
+.carouselNumberContainer{
+    position: absolute;
+    left: -21px;
+}
+.carouselNumberContainer span{
+    color: rgba(0, 0, 0, 0.8);
+    -webkit-text-stroke: 0.125rem rgb(255,255,255);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    font-size: 4rem;
+}
 
 .crousaelCard{
     /* border: 3px solid blue; */
-    width: 13%;
-    height: 45vh;
+    width: 10%;
+    height: 39vh;
+    border-radius: 20px;
+    position: relative;
 }
 
 .carouselImageContainer{
@@ -242,4 +265,109 @@ nav{
     width: 100%;
     height:100%;
     border-radius: 10px;
+}
+
+.planCard,.reasonCard{
+    width: 23%;
+    height: 42vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.334);
+     
+}
+.reasonCard{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    height: 40vh;
+}
+.plainCard1{
+    background: linear-gradient(149deg,
+    #1C4072 6.96%, #172B47 40.17%, #120c1f 73.39%);
+}
+.plainCard2{
+    background: linear-gradient(149deg, #1C4072 6.96%, #172B47 40.17%, #120c1f 73.39%);
+}
+.plainCard3{
+    background: linear-gradient(149deg, #59216E 6.96%, #251743 40.17%, #120c1f 73.39%);
+}
+.plainCard4{
+    background: linear-gradient(149deg, #6C1E41 6.96%, #251743 40.17%, #120c1f 73.39%);
+}
+
+.planCard h4{
+    /* border: 1px solid yellow; */
+    font-size: 1.2rem;
+    color:rgba(255, 255, 255, 0.6)
+}
+.planCard h3{
+    /* border: 1px solid yellow; */
+    margin-left: 0;
+    font-size: 1.8rem;
+    color:rgba(255, 255, 255)
+}
+
+.planCard p{
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.reasonCard{
+    background-color: rgba(255, 255, 255, 0.150);
+}
+
+.reasonCard h3{
+    /* border: 1px solid yellow; */
+    margin-left: 0;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color:rgba(255, 255, 255)
+}
+.reasonCard p{
+    font-size: 1rem;
+    margin-top: 0.3rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+.reasonCardLowerContent{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.faqCard{
+    /* border:1px solid red; */
+    width: 100%;
+}
+.faqQuestion,.faqAnswer{
+    padding: 1rem;   
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.150);
+}
+
+.faqQuestion{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    
+}
+.faqQuestion span{
+    font-size: 3rem;
+    font-weight: 900;
+    
+}
+.faqAnswer{
+    display: none;
+}
+.faqCard:hover{
+    cursor: pointer;
+}
+
+.faqCard:hover .faqQuestion{
+    background-color: rgba(255, 255, 255, 0.266);
+}
+.faqCard:hover .faqAnswer{
+    display: block;
+    cursor: pointer;
 }
